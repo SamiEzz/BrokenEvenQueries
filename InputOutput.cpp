@@ -8,7 +8,7 @@ using namespace std;
 
 int setLastPrime(primePotentialInt_t prime) {
   ofstream myfile;
-  myfile.open("./primes.txt", std::ios_base::app);
+  myfile.open(PRIMESRC, std::ios_base::app);
   if (myfile.is_open()) {
     myfile << "\n" << prime;
     myfile.close();
@@ -18,7 +18,7 @@ int setLastPrime(primePotentialInt_t prime) {
 }
 
 void getLastPrime(primePotentialInt_t *prime) {
-  string filename = "primes.txt";
+  string filename = PRIMESRC;
   ifstream fin;
   fin.open(filename);
   if (fin.is_open()) {

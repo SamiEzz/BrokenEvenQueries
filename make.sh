@@ -1,0 +1,1 @@
+g++ main.cpp InputOutput.cpp -o ./build/main

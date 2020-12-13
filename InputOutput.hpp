@@ -1,9 +1,11 @@
 
 
-typedef unsigned long long primePotentialInt_t;
+#define PRIMESRC "./PRIMES/primes.txt"
 
-int isPrimeNumber(bool* isPrime,primePotentialInt_t number);
+typedef unsigned long primePotentialInt_t;
 
-void getLastPrime(primePotentialInt_t* prime);
+int isPrimeNumber(bool *isPrime, primePotentialInt_t number);
+
+void getLastPrime(primePotentialInt_t *prime);
 
 int setLastPrime(primePotentialInt_t);
